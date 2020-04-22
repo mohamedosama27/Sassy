@@ -27,6 +27,13 @@ class ItemController extends Controller
   ]);
 
    }
+   public function welcome() {
+
+        $items = \App\item::paginate(10);
+
+        return view('welcome',compact('items'));
+
+  }
     public function index(Request $request) {
       if(\App\item::count()>10){
 

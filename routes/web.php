@@ -12,7 +12,7 @@
 */
 
 // Route::get('/', 'ItemController@showAll');
-Route::get('/index', 'ItemController@random')->name('index');
+Route::get('/welcome', 'ItemController@welcome')->name('welcome');
 
 Route::get('send-mail','MailSend@mailsend');
 Route::get('chat/{id}','MessageController@show')->name('chat')->middleware('auth');
@@ -31,7 +31,7 @@ Route::post('/sendmessage', [
 ])->middleware('auth');
 
 
-Route::get('/', 'ItemController@index')->name('home');
+Route::get('/', 'ItemController@welcome')->name('home');
 Route::get('/category/{id}', 'CategoryController@index')->name('category');
 
 Route::get('/ItemController/action', 'ItemController@action')->name('ItemController.action');
@@ -49,7 +49,7 @@ Route::post('/incrementItem', [
 
 
 Route::get('/home', [
-    'uses' => 'ItemController@index',
+    'uses' => 'ItemController@welcome',
     'as' => 'home'
 ]);
 Route::put('/update/{id}',

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="icon" type="image/png" href={{ URL::asset("images/icn.ico")}} >
 <title>Sassy</title>
 <meta charset="UTF-8">
 
@@ -52,7 +53,7 @@ body{
   margin:-5px;
   margin-top:5px;
   margin-bottom:-10px;
-  letter-spacing: 4px;
+  letter-spacing: 7px;
   font-size: 24px;
 }
 .w3-bar{
@@ -67,9 +68,13 @@ body{
 }
 .topicons {
   margin-top:5px;
-    font-size: 30px;
+    font-size: 23px;
 }
 
+}
+.topicons {
+  margin-top:5px;
+    font-size: 25px;
 }
 
 .chat_list {
@@ -107,6 +112,7 @@ body{
     max-width:90%;
     text-overflow: ellipsis;
 }
+
 </style>
 @auth
     @if(Auth::user()->type == 1)
@@ -200,6 +206,8 @@ body{
         
       @endforeach
     </div>
+
+
     <!-- <a href="#" class="w3-bar-item w3-button w3-white">
       <i class='fa fa-phone' style="margin-right:5px;">
     </i>Contact</a>
