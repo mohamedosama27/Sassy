@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<link rel="icon" type="image/png" href={{ URL::asset("images/in.ico")}} >
 <title>Sassy</title>
 <meta charset="UTF-8">
 
