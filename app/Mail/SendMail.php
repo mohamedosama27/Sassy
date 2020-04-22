@@ -30,7 +30,7 @@ class SendMail extends Mailable
      */
      public function build()
     {
-        return $this->subject('Mail from omasha')
+        return $this->subject('Mail from sassy')
                     ->markdown('emails.send_order_to_admin');
     }
 }
