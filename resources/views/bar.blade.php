@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="icon" type="image/png" href={{ URL::asset("images/icon.ico")}} >
-<title>OMASHA</title>
+<title>Sassy</title>
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -121,7 +121,7 @@ body{
 
 
 <a href="{{route('home')}}" style="color:white;">
-<div class="w3-bar-item w3-wide toptitle"><b>OMASHA</b></div></a>
+<div class="w3-bar-item w3-wide toptitle"><b>Sassy</b></div></a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button  w3-right" onclick="w3_open()">
   <i class="fa fa-2x fa-bars topicons"></i></a>
   <a href="{{ Request::is('cart') ? route('home') : route('cart') }}" class="w3-bar-item w3-button  w3-right" >
@@ -160,11 +160,7 @@ body{
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h2 class="w3-wide">
-  <span class="icon">
-
-<img width="50" height="50" class="manImg" src={{ URL::asset("images/icon.png")}}></img>
-
-</span><b>OMASHA</b></h2>
+<b>Sassy</b></h2>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="{{route('home')}}" class="w3-bar-item w3-button w3-white"><i class="fa fa-home" style="margin-right:5px;"></i>Home</a>
