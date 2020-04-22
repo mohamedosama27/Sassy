@@ -1,0 +1,23 @@
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+a{
+  color:black;
+}
+.wrapper{
+position: relative;
+}
+.wrapper .countCart{
+position: absolute;
+top: -2px;
+right: -2px; 
+}
+#countCart{
+  background-color:red;
+}
+body{
+  margin-top:70px;
+}
+@media screen and (min-width: 1245px) {
+  .w3-sidebar{
+    margin-left: -10px;
+  }
+}

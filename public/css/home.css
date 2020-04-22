@@ -1,0 +1,75 @@
+@media screen and (min-width: 650px) {
+
+  .div1{
+    width:180px;
+
+  }
+  p{
+    max-width: 180px;
+
+  }
+}
+@media screen and (max-width: 650px) {
+  .div1{
+    width:150px;
+
+  }
+  p{
+    max-width: 150px;
+
+  }
+  
+
+}
+@media screen and (max-width: 320px) {
+  .div1{
+    width:130px;
+
+  }
+  p{
+    max-width: 130px;
+
+  }
+
+}
+.div1{
+  height:170px;
+
+}
+    
+    
+    
+      .div3
+      {
+        display: table;
+        
+      }
+     
+  
+    
+      .cardspace{
+          margin:10px;
+      }
+    
+      .item{
+      text-align:center;
+      }
+     
+      .carousel img {
+        height: 170px!important;
+        display:inline-block  !important;
+      }
+   
+      .div3
+      {
+        max-height:220px;
+        
+      }
+      p 
+      {
+       color:black;
+       height :20px;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+      }
