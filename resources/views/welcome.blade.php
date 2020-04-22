@@ -28,7 +28,18 @@
 .w3-bar{
 z-index:20;
 }
+.w3-sidebar{
+z-index:25;
+}
+@media (min-width:992px){
+    .footer {
+        margin-left:250px;
+        width:70%;
 
+    }
+    
+  
+}
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -163,7 +174,7 @@ z-index:20;
 
 </div>
 
-<br>
+<br clear="all" />
 
 <div class="custom-pagination-brand-blue" style="text-align:center;z-index:-1;">
 {{ $items->links() }}
@@ -202,6 +213,7 @@ class="socialicons"
     
     $(".countCart").css("z-index", "30");
 
+    $(".w3-sidebar").css("z-index", "30");
 
 
     $.ajaxSetup({
