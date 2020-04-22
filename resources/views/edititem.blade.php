@@ -3,7 +3,6 @@
 @section('content')
 <style>
     label {
-        color: lightskyblue;
         margin:5px;
     }
     input{
@@ -32,7 +31,7 @@ form.addEventLisener('submit,function(e){
     <form method="POST" action="{{route('item.update',['id' => $item->id])}}" enctype="multipart/form-data">
     @csrf
     @method('PUT')
-        <h1 style="color:lightskyblue;">New item</h1>
+        <h1>New item</h1>
 
             <label for="exampleInputEmail1">Item Name</label>
             <input @if($item->name) value="{{$item->name}}"@endif type="Text" class="form-control" id="text" Name="name" placeholder="Item Name" required>

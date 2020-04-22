@@ -3,7 +3,6 @@
 @section('content')
 <style>
     label {
-        color: lightskyblue;
         margin:5px;
     }
     input{
@@ -33,7 +32,7 @@ form.addEventLisener('submit,function(e){
     @csrf
     @method('PUT')
     
-        <h1 style="color:lightskyblue;">New item</h1>
+        <h1>New item</h1>
 
             <label>Item Name</label>
             <input type="Text" class="form-control" id="text" Name="name" placeholder="Item Name" value="{{ old('name') }}" required>
