@@ -117,7 +117,7 @@
 <script type="text/javascript">
 $(function(){
   var numberofitems=$("#countitems").val();
-                    if(numberofitems<=10)
+                    if(numberofitems<10)
                     {
                       $('.fa-spinner').hide();
 
