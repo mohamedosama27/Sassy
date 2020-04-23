@@ -63,7 +63,6 @@ body{
   .toptitle
 {
   margin-bottom:-10px;
-  letter-spacing: 0px;
   font-size:20px ;
 }
 .topicons {

@@ -1,7 +1,11 @@
 @extends('bar')
 
 @section('content')
-<style>
+<link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'><style>
+p{
+    font-family: 'Alef';
+    font-size: 19px;
+    }
 .footer {
     height:50px;
    position: fixed;
