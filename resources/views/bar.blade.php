@@ -60,14 +60,14 @@ body{
   height:50px;
 }
 @media (max-width:370px){
-  .toptitle
-{
-  margin-bottom:-10px;
-  font-size:20px ;
-}
+
 .topicons {
   margin-top:5px;
     font-size: 23px;
+}
+.toplogo{
+  top:0;
+  width:110px;
 }
 
 }
@@ -125,7 +125,12 @@ body{
 
 
 <a href="{{route('home')}}" style="color:white;">
-<div class="w3-bar-item w3-wide toptitle"><b>Sassy</b></div></a>
+<div class="w3-bar-item w3-wide"> 
+<span class='toplogo w3-top'>
+
+<img  class='toplogo' width="150" height="60"  src={{ URL::asset("images/White.png")}}></img>
+
+</span></div></a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button  w3-right" onclick="w3_open()">
   <i class="fa fa-2x fa-bars topicons"></i></a>
   <a href="{{ Request::is('cart') ? route('home') : route('cart') }}" class="w3-bar-item w3-button  w3-right" >
@@ -163,8 +168,14 @@ body{
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    
     <h2 class="w3-wide">
-<b>Sassy</b></h2>
+    <span class="icon">
+
+<img width="100%" height="130"  src={{ URL::asset("images/Black.png")}}></img>
+
+</span>
+    </h2>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="{{route('home')}}" class="w3-bar-item w3-button w3-white"><i class="fa fa-home" style="margin-right:5px;"></i>Home</a>
