@@ -1,12 +1,8 @@
 @extends('bar')
 
 @section('content')
-<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
 <style>
-p{
-    font-family: 'Anaheim';
-    font-size: 19px;
-    }
+
 .footer {
     height:50px;
    position: fixed;
