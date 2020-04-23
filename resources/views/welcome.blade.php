@@ -102,8 +102,7 @@ z-index:25;
        
     <a href="{{route('item.show',['id' => $item->id])}}"> 
     @if(! $item->images->isEmpty())
-
-    <img class="div1" src="images/{{$item->images->first()->name}}" /></a>
+    <img class="div1" src={{ URL::asset("images/{$item->images->first()->name}")}} /></a>
     @else
     <img class="div1"/></a>
 
