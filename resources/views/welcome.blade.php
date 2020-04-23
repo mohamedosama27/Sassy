@@ -1,9 +1,10 @@
 @extends('bar')
 
 @section('content')
-<link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'><style>
+<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+<style>
 p{
-    font-family: 'Alef';
+    font-family: 'Anaheim';
     font-size: 19px;
     }
 .footer {
@@ -69,7 +70,7 @@ z-index:25;
     <img src="images/12997.jpeg"  width="100%" height="300">
   </div>
   <div class="carousel-item">
-    <img src="images/21730.jpeg" width="100%" height="300">
+    <img src="images/27129.jpeg" width="100%" height="300">
   </div>
 </div>
 
@@ -98,46 +99,18 @@ z-index:25;
 
 <div class="w3-col l3 s6">
       <div class="w3-container div3">
-      
-  <div id="myCarousel{{$item->id}}" class="carousel slide" data-ride="carousel" data-interval="false" >
-   
- 
-    <!-- Wrapper for slides -->
-    
-    <div class="carousel-inner div1" >
-    
+       
+    <a href="{{route('item.show',['id' => $item->id])}}"> 
+    @if(! $item->images->isEmpty())
 
-    @foreach($item->images as $image)
+    <img class="div1" src="images/{{$item->images->first()->name}}" /></a>
+    @else
+    <img class="div1"/></a>
 
-    @if ($loop->first)
-    <div class="item active" >
-    <a href="{{route('item.show',['id' => $item->id])}}"> <img src={{ URL::asset("images/{$image->name}")}}></a>
-      </div>    
-     @else
-      <div class="item">
-      <a href="{{route('item.show',['id' => $item->id])}}">  <img src={{ URL::asset("images/{$image->name}")}}></a>
-        
-      </div>
-      
 
       @endif
-      @endforeach
-      
 
-   
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel{{$item->id}}" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel{{$item->id}}" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  @if($item->quantity == 0)
+     @if($item->quantity == 0)
   <p style="color:red;">Available Soon</p>
   @else
   <p><a href="{{route('item.show',['id' => $item->id])}}">{{$item->name}}</a></p>

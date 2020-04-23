@@ -10,7 +10,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <h4 id="messaga" style="text-align:center">Modal body..</h4>
+        <h3 id="messaga" style="text-align:center">Modal body..</h3>
       </div>
 
       <!-- Modal footer -->

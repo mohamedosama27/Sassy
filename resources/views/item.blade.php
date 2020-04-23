@@ -146,7 +146,8 @@ img {
             @foreach($item->images as $image)
              @if ($loop->first)
              
-						  <li class="active"><a data-target="#pic-{{$loop->iteration}}" data-toggle="tab"><img src={{ URL::asset("images/{$image->name}")}} /></a></li>
+						  <li class="active"><a data-target="#pic-{{$loop->iteration}}" data-toggle="tab">
+              <img src={{ URL::asset("images/{$image->name}")}} /></a></li>
 						  @else
               <li><a data-target="#pic-{{$loop->iteration}}" data-toggle="tab"><img src={{ URL::asset("images/{$image->name}")}} /></a></li>
               @endif
